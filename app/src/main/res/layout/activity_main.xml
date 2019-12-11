@@ -20,9 +20,9 @@
         android:id="@+id/open_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="57dp"
-        android:text="Open Rating"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="56dp"
+        android:text="Open Movies"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 

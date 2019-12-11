@@ -5,7 +5,7 @@ class Movie (val id :String,
              val release :String,
              val plot :String,
              val genre :MovieGenre,
-             val direcotr: Person,
+             val director: Person,
              val actors: List<Person>,
              val reviews: MutableList<Review>) {
 
@@ -15,7 +15,7 @@ class Movie (val id :String,
     }
 
     override fun toString(): String {
-        return "Movie(id='$id', title='$title', release='$release', plot='$plot', genre=$genre, direcotr=$direcotr, actors=$actors, reviews=$reviews)"
+        return "Movie(id='$id', title='$title', release='$release', plot='$plot', genre=$genre, direcotr=$director, actors=$actors, reviews=$reviews)"
     }
 
 

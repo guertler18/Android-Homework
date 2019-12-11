@@ -13,10 +13,12 @@ class MainActivity : AppCompatActivity() {
 
 
         open_rating.setOnClickListener {
-            val intent = Intent (this, MovieList::class.java)
+            val intent = Intent (this, MovieListActivity::class.java)
             startActivity(intent)
         }
     }
+
+
 
 
 
