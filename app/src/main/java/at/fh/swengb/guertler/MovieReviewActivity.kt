@@ -7,6 +7,10 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_movie_review.*
 
 class MovieReviewActivity : AppCompatActivity() {
+    companion object {
+        val EXTRA_MOVIE_ID = "MOVIE_ID_EXTRA";
+        val ADD_OR_EDITED_RESULT = "ADD_RESULT";
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +31,9 @@ class MovieReviewActivity : AppCompatActivity() {
                 val rating = Review(ratingValue, feedback)
 
                 MovieRepository.rateMovie(movieId,rating)
+
+                val intentResult = intent
+                intentResult.putExtra(EXTRA_MOVIE_ID ,movieId)
 
                 setResult(Activity.RESULT_OK)
                 finish()

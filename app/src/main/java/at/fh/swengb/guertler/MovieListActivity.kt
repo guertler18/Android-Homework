@@ -32,8 +32,15 @@ val movieAdapter = MovieAdapter() {
             movieAdapter.updateList(MovieRepository.moviesList())
             movie_recycler_view.layoutManager = LinearLayoutManager(this)
             movie_recycler_view.adapter = movieAdapter
+
         }
 
+    override fun onResume() {
+        super.onResume()
+        movieAdapter.updateList(MovieRepository.moviesList())
+        movie_recycler_view.layoutManager = LinearLayoutManager(this)
+        movie_recycler_view.adapter = movieAdapter
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 

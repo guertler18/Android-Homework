@@ -9,10 +9,12 @@
 
     <TextView
         android:id="@+id/titel_detail"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="TextView" />
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,13 +27,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Director" />
+            android:paddingLeft="5sp"
+            android:text="Director"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/director_content_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5sp"
             android:text="TextView" />
     </LinearLayout>
 
@@ -46,19 +52,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Actors" />
+            android:paddingLeft="5sp"
+            android:text="Actors"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/actors_detail_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5sp"
             android:text="TextView" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="38dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -67,19 +77,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Genre" />
+            android:paddingLeft="5sp"
+            android:text="Genre"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/genre_detail_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5sp"
             android:text="TextView" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="34dp"
         android:orientation="horizontal">
 
         <RatingBar
@@ -101,12 +115,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5sp"
             android:text="TextView" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="44dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -115,13 +131,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Release" />
+            android:paddingLeft="5sp"
+            android:text="Release"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/release_detail_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5sp"
             android:text="TextView" />
     </LinearLayout>
 
@@ -130,13 +150,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Plot" />
+        android:paddingLeft="5sp"
+        android:text="Plot"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/plot_detail_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:paddingLeft="5sp"
         android:text="TextView" />
 
     <Button
